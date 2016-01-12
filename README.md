@@ -34,10 +34,10 @@ Nevertheless, on this dataset the Haskell program compiled with `O2` optimizatio
 
 ### About the one-sided mean alignment kernel
 
-Well-known kernel methods such as for example SVM and Kernel PCA rely on a kernel which is used computes a Gram matrix which can generally be interpreted as a matrix of similarity values between any pair of samples in the dataset.
+Well-known kernel methods such as for example SVM and Kernel PCA rely on a kernel which is used to compute a Gram matrix which can generally be interpreted as a matrix of similarity values between any pair of samples in the dataset.
 These algorithms require that the kernel be _positive definite_, which guarantees that the resulting optimization programs are convex whatever the samples.
 
-When dealing with vector data the most sensible choice is generally a Gaussian kernel, but when the samples are time-series (or more generally sequences) custom kernels must be used.
+When dealing with vector data the most common choice is generally a Gaussian kernel, but when the samples are time-series (or more generally sequences) custom kernels must be used.
 There are not many sensible choices, as merely using a classic _dynamic time warping_ distance does not lead to a positive definite kernel.
 
 To this end we propose the one-sided mean kernel, which has many advantages:
