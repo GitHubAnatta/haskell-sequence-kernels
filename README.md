@@ -46,6 +46,9 @@ To this end we propose the one-sided mean kernel, which has many advantages:
 * Consistent with a vector kernel when time series are of equal length,
 * Does not suffer from issues of diagonal dominance like the global alignment kernel for example.
 
+For comparison an implementation in Python is available [here](https://github.com/nchrys/python-sequence-kernels).
+
+
 ### TODO
 
 1. Rewrite the algorithm using the `ST` monad,
